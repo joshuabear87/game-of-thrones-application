@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    .container {
+    margin: auto;
+    padding: 20px;
+    }
+    
+    .card {
+    transition: transform 0.2s ease-in-out;
+    }
+    
+    .card:hover {
+    transform: scale(1.02);
+    }
