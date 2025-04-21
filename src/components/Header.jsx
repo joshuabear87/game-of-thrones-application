@@ -100,16 +100,36 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       >
         <List>
           <ListItem button component={Link} to="/" onClick={() => toggleDrawer(false)}>
-            <ListItemText primary="Home" />
+            <ListItemText
+              primary="Home"
+              sx={{
+                color: darkMode ? 'white' : '#4C4C4C', // White text in dark mode, dark bronze in light mode
+              }}
+            />
           </ListItem>
           <ListItem button component={Link} to="/books" onClick={() => toggleDrawer(false)}>
-            <ListItemText primary="Books" />
+            <ListItemText
+              primary="Books"
+              sx={{
+                color: darkMode ? 'white' : '#4C4C4C', // White text in dark mode, dark bronze in light mode
+              }}
+            />
           </ListItem>
           <ListItem button component={Link} to="/characters" onClick={() => toggleDrawer(false)}>
-            <ListItemText primary="Characters" />
+            <ListItemText
+              primary="Characters"
+              sx={{
+                color: darkMode ? 'white' : '#4C4C4C', // White text in dark mode, dark bronze in light mode
+              }}
+            />
           </ListItem>
           <ListItem button component={Link} to="/houses" onClick={() => toggleDrawer(false)}>
-            <ListItemText primary="Houses" />
+            <ListItemText
+              primary="Houses"
+              sx={{
+                color: darkMode ? 'white' : '#4C4C4C', // White text in dark mode, dark bronze in light mode
+              }}
+            />
           </ListItem>
         </List>
       </Drawer>
